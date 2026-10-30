@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PELTA · A little support in every move.</title>
+<meta name="description" content="모든 움직임에 작은 응원을. 발바닥에 응원을 새긴 그립삭스, PELTA.">
+<meta property="og:title" content="PELTA">
+<meta property="og:description" content="A little support in every move. 모든 움직임에 작은 응원을">
+<meta property="og:image" content="/images/hero.jpg">
+<link rel="icon" href="/images/logo.png">
+<style>html{scroll-behavior:smooth;}body{margin:0;}.pt-pop__done{margin:8px 0;font-size:15px;line-height:1.6;}</style>
+</head>
+<body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;600&display=swap">
+<style>
+:root{
+  --pt-ink:#1D1428; --pt-purple:#6638B6; --pt-lime:#D4F34A; --pt-lav:#C9B8F0;
+  --pt-cream:#F3EFE8; --pt-mist:#F7F7F7; --pt-mute:#6B6077;
+  --pt-en:'Instrument Serif',Georgia,serif;
+  --pt-krs:'Noto Serif KR',Georgia,serif;
+  --pt-kr:'Noto Sans KR',-apple-system,'Apple SD Gothic Neo',sans-serif;
+  --pt-wrap:1320px; --pt-pad:clamp(20px,4vw,56px);
+}
+.pt-sec{font-family:var(--pt-kr);color:var(--pt-ink);padding:clamp(64px,9vw,128px) var(--pt-pad);}
+.pt-wrap{max-width:var(--pt-wrap);margin:0 auto;}
+.pt-en{font-family:var(--pt-en);font-style:italic;font-weight:400;}
+.pt-h2{font-family:var(--pt-kr);font-weight:700;font-size:clamp(26px,3.2vw,40px);line-height:1.35;letter-spacing:-.02em;margin:0;}
+.pt-body{font-size:16px;line-height:1.75;color:var(--pt-mute);margin:0;}
+.pt-btn{display:inline-block;padding:15px 30px;border-radius:999px;background:var(--pt-ink);color:#fff;font:500 15px/1 var(--pt-kr);text-decoration:none;transition:background .2s;}
+.pt-btn:hover{background:var(--pt-purple);color:#fff;}
+.pt-btn:focus-visible,.pt-link:focus-visible{outline:2px solid var(--pt-purple);outline-offset:3px;}
+.pt-link{color:inherit;font-size:15px;text-decoration:underline;text-underline-offset:5px;}
+@media (prefers-reduced-motion:reduce){.pt-sec *{transition:none!important;}}
+</style>
+
+<header class="pt-head">
+  <div class="pt-head__in">
+    <button class="pt-head__burger" type="button" aria-expanded="false" aria-controls="pt-nav" aria-label="메뉴 열기"><span></span></button>
+    <a class="pt-head__logo" href="/"><img src="/images/logo.png" alt="Pelta"></a>
+    <nav class="pt-nav" id="pt-nav" aria-label="주 메뉴">
+      <ul class="pt-nav__list">
+        <li class="pt-nav__item pt-nav__item--mega"><a class="pt-nav__top" href="#all">Socks</a>
+<div class="pt-mega">
+<div class="pt-mega__in">
+<div class="pt-mega__col"><p class="pt-mega__title">Socks</p><ul><li><a href="#all">Grip socks</a></li><li><a href="#all">Toe socks</a></li></ul></div>
+<div class="pt-mega__col"><p class="pt-mega__title">Colors</p><ul class="pt-mega__colors"><li><a href="#collection">matcha</a></li><li><a href="#collection">lavender</a></li><li><a href="#collection">cherry pie</a></li><li><a href="#collection">peach yogurt</a></li><li><a href="#collection">lemon squishy</a></li><li><a href="#collection">lilac</a></li><li><a href="#collection">pistachio</a></li></ul></div>
+<div class="pt-mega__col"><p class="pt-mega__title">Shop</p><ul><li><a href="#all">All</a></li><li><a href="#all">Best</a></li><li><a href="#all">Sets</a></li></ul></div>
+<a class="pt-mega__card" href="#collection"><span class="pt-mega__img"><img src="/images/mega-1.jpg" alt=""></span><span>Signature lavender</span></a>
+<a class="pt-mega__card" href="#all"><span class="pt-mega__img"><img src="/images/mega-2.jpg" alt=""></span><span>A cheer underfoot: You Got This</span></a>
+</div>
+</div>
+        </li>
+        <li class="pt-nav__item"><a class="pt-nav__top" href="#all">Collection</a></li>
+        <li class="pt-nav__item"><a class="pt-nav__top" href="#all">Lagree</a></li>
+        <li class="pt-nav__item"><a class="pt-nav__top" href="#all">Pilates</a></li>
+        <li class="pt-nav__item"><a class="pt-nav__top" href="#all">Activewear</a></li>
+        <li class="pt-nav__item"><a class="pt-nav__top" href="#all">Recovery &amp; Care</a></li>
+        <li class="pt-nav__item"><a class="pt-nav__top" href="#all">Straps &amp; Bands</a></li>
+        <li class="pt-nav__item"><a class="pt-nav__top" href="#all">Accessories</a></li>
+      </ul>
+    </nav>
+    <div class="pt-head__util">
+      <a href="#">Search</a>
+      <a href="#">Account</a>
+      <a href="#">Cart</a>
+    </div>
+  </div>
+</header>
+<style>
+.pt-head{position:sticky;top:0;z-index:100;background:#fff;border-bottom:1px solid #EEE9F4;font-family:var(--pt-kr);color:var(--pt-ink);}
+.pt-head__in{max-width:1440px;margin:0 auto;padding:0 var(--pt-pad);height:68px;display:flex;align-items:center;gap:40px;}
+.pt-head__logo img{height:26px;width:auto;display:block;}
+.pt-nav{flex:1;}
+.pt-nav__list{list-style:none;margin:0;padding:0;display:flex;gap:28px;}
+.pt-nav__top{display:block;line-height:68px;font-size:14px;color:inherit;text-decoration:none;white-space:nowrap;}
+.pt-nav__top:hover{color:var(--pt-purple);}
+.pt-head__util{display:flex;gap:20px;font-size:13px;}
+.pt-head__util a{color:inherit;text-decoration:none;}
+.pt-head a:focus-visible,.pt-head button:focus-visible{outline:2px solid var(--pt-purple);outline-offset:3px;}
+.pt-mega{position:absolute;left:0;right:0;top:100%;background:#fff;border-top:1px solid #EEE9F4;box-shadow:0 24px 40px -24px rgba(29,20,40,.18);opacity:0;visibility:hidden;transition:opacity .2s;}
+.pt-nav__item--mega:hover .pt-mega,.pt-nav__item--mega:focus-within .pt-mega{opacity:1;visibility:visible;}
+.pt-mega__in{max-width:1440px;margin:0 auto;padding:36px var(--pt-pad) 44px;display:grid;grid-template-columns:repeat(3,minmax(120px,1fr)) repeat(2,minmax(180px,220px));gap:32px;}
+.pt-mega__title{font-size:12px;color:var(--pt-mute);margin:0 0 14px;}
+.pt-mega ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px;}
+.pt-mega ul a{color:inherit;text-decoration:none;font-size:14px;}
+.pt-mega ul a:hover{color:var(--pt-purple);}
+.pt-mega__colors a{font-family:var(--pt-en);font-style:italic;font-size:19px !important;}
+.pt-mega__card{display:flex;flex-direction:column;gap:10px;color:inherit;text-decoration:none;font-size:13px;}
+.pt-mega__img{aspect-ratio:3/4;background:var(--pt-mist);overflow:hidden;}
+.pt-mega__img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s;}
+.pt-mega__card:hover img{transform:scale(1.04);}
+.pt-head__burger{display:none;width:40px;height:40px;border:0;background:none;padding:0;cursor:pointer;}
+.pt-head__burger span,.pt-head__burger span::before,.pt-head__burger span::after{display:block;width:20px;height:1.5px;background:var(--pt-ink);position:relative;margin:0 auto;}
+.pt-head__burger span::before,.pt-head__burger span::after{content:"";position:absolute;left:0;}
+.pt-head__burger span::before{top:-6px;} .pt-head__burger span::after{top:6px;}
+@media (max-width:1100px){
+  .pt-head__in{gap:16px;}
+  .pt-head__burger{display:block;}
+  .pt-head__logo{margin-right:auto;}
+  .pt-head__util a:not(:last-child){display:none;}
+  .pt-nav{position:fixed;inset:68px 0 0 0;background:#fff;overflow-y:auto;padding:16px var(--pt-pad) 40px;display:none;}
+  .pt-head.is-open .pt-nav{display:block;}
+  .pt-nav__list{flex-direction:column;gap:0;}
+  .pt-nav__top{line-height:54px;font-size:17px;border-bottom:1px solid #EEE9F4;}
+  .pt-mega{position:static;opacity:1;visibility:visible;box-shadow:none;border:0;}
+  .pt-mega__in{grid-template-columns:1fr 1fr;padding:20px 0;gap:24px;}
+  .pt-mega__card{display:none;}
+}
+</style>
+<script>
+(function(){var h=document.querySelector('.pt-head'),b=h&&h.querySelector('.pt-head__burger');if(!b)return;
+b.addEventListener('click',function(){var o=h.classList.toggle('is-open');b.setAttribute('aria-expanded',o);b.setAttribute('aria-label',o?'메뉴 닫기':'메뉴 열기');});})();
+</script>
+<main>
+
+<section class="pt-hero">
+  <div class="pt-hero__film">
+    <video autoplay muted loop playsinline preload="metadata" poster="/images/hero.jpg" aria-label="PELTA 패션 필름">
+      <source src="/images/hero.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="pt-hero__text">
+    <h1 class="pt-hero__title pt-en">A little support in every move.</h1>
+    <div class="pt-hero__side">
+      <p class="pt-hero__sub">모든 움직임에 작은 응원을</p>
+      <a class="pt-btn" href="#all">컬렉션 보기</a>
+    </div>
+  </div>
+</section>
+<style>
+.pt-hero{background:var(--pt-cream);font-family:var(--pt-kr);color:var(--pt-ink);}
+.pt-hero__film{position:relative;height:min(100vh,1000px);min-height:520px;background:var(--pt-ink);overflow:hidden;}
+.pt-hero__film video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;}
+.pt-hero__text{max-width:1440px;margin:0 auto;padding:clamp(48px,7vw,104px) var(--pt-pad);display:flex;justify-content:space-between;align-items:flex-end;gap:40px;flex-wrap:wrap;}
+.pt-hero__title{font-size:clamp(48px,7vw,112px);line-height:.95;letter-spacing:-.02em;margin:0;color:var(--pt-purple);max-width:12ch;}
+.pt-hero__side{display:flex;flex-direction:column;align-items:flex-start;gap:20px;}
+.pt-hero__sub{font-size:clamp(17px,1.6vw,21px);font-weight:500;margin:0;}
+@media (max-width:900px){.pt-hero__film{height:auto;aspect-ratio:4/5;min-height:0;}}
+</style>
+<div id="collection">
+<section class="pt-sec pt-colors">
+  <div class="pt-wrap">
+    <ul class="pt-colors__row">
+    <li class="pt-color">
+      <a href="#collection">
+        <span class="pt-color__img"><img class="pt-color__main" src="/images/matcha.jpg" alt="PELTA matcha"><img class="pt-color__hover" src="/images/matcha-model.jpg" alt=""></span>
+        <span class="pt-color__name pt-en">matcha</span>
+        <span class="pt-color__story">차분하고 산뜻하게, 첫 동작을 시작할 준비.</span>
+      </a>
+    </li>
+    <li class="pt-color">
+      <a href="#collection">
+        <span class="pt-color__img"><img class="pt-color__main" src="/images/lavender.jpg" alt="PELTA lavender"><img class="pt-color__hover" src="/images/lavender-model.jpg" alt=""></span>
+        <span class="pt-color__name pt-en">lavender</span>
+        <span class="pt-color__story">수업 끝나고 길게 내쉬는 숨의 색.</span>
+      </a>
+    </li>
+    <li class="pt-color">
+      <a href="#collection">
+        <span class="pt-color__img"><img class="pt-color__main" src="/images/cherry-pie.jpg" alt="PELTA cherry pie"><img class="pt-color__hover" src="/images/cherry-pie-model.jpg" alt=""></span>
+        <span class="pt-color__name pt-en">cherry pie</span>
+        <span class="pt-color__story">조금 달콤하고, 조금 대담하게.</span>
+      </a>
+    </li>
+    <li class="pt-color">
+      <a href="#collection">
+        <span class="pt-color__img"><img class="pt-color__main" src="/images/peach-yogurt.jpg" alt="PELTA peach yogurt"><img class="pt-color__hover" src="/images/peach-yogurt-model.jpg" alt=""></span>
+        <span class="pt-color__name pt-en">peach yogurt</span>
+        <span class="pt-color__story">그저 시작만 하면 되는 날을 위해.</span>
+      </a>
+    </li>
+    <li class="pt-color">
+      <a href="#collection">
+        <span class="pt-color__img"><img class="pt-color__main" src="/images/lemon-squishy.jpg" alt="PELTA lemon squishy"><img class="pt-color__hover" src="/images/lemon-squishy-model.jpg" alt=""></span>
+        <span class="pt-color__name pt-en">lemon squishy</span>
+        <span class="pt-color__story">문을 나서게 할 만큼 환하게.</span>
+      </a>
+    </li>
+    <li class="pt-color">
+      <a href="#collection">
+        <span class="pt-color__img"><img class="pt-color__main" src="/images/lilac.jpg" alt="PELTA lilac"><img class="pt-color__hover" src="/images/lilac-model.jpg" alt=""></span>
+        <span class="pt-color__name pt-en">lilac</span>
+        <span class="pt-color__story">발목부터 발끝까지 차분하게.</span>
+      </a>
+    </li>
+    <li class="pt-color">
+      <a href="#collection">
+        <span class="pt-color__img"><img class="pt-color__main" src="/images/pistachio.jpg" alt="PELTA pistachio"><img class="pt-color__hover" src="/images/pistachio-model.jpg" alt=""></span>
+        <span class="pt-color__name pt-en">pistachio</span>
+        <span class="pt-color__story">한 걸음 더 나아가고 싶은 날을 위해.</span>
+      </a>
+    </li>
+    </ul>
+  </div>
+</section>
+<style>
+.pt-colors{background:#fff;}
+.pt-colors__row{list-style:none;margin:0;padding:0 0 8px;display:grid;grid-auto-flow:column;grid-auto-columns:78%;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:thin;}
+.pt-color{scroll-snap-align:start;}
+.pt-color a{display:flex;flex-direction:column;gap:6px;color:inherit;text-decoration:none;}
+.pt-color__img{position:relative;display:block;aspect-ratio:3/4;background:var(--pt-mist);overflow:hidden;margin-bottom:10px;}
+.pt-color__img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity .4s ease,transform .6s ease;}
+.pt-color__hover{opacity:0;}
+@media (hover:hover){
+  .pt-color a:hover .pt-color__hover{opacity:1;}
+  .pt-color a:hover .pt-color__main{transform:scale(1.03);}
+}
+.pt-color__name{font-size:28px;line-height:1.1;}
+.pt-color__story{font-size:15px;line-height:1.6;color:var(--pt-mute);}
+.pt-color a:focus-visible{outline:2px solid var(--pt-purple);outline-offset:4px;}
+@media (min-width:700px){.pt-colors__row{grid-auto-columns:calc((100% - 48px)/2.3);}}
+@media (min-width:1100px){.pt-colors__row{grid-auto-columns:calc((100% - 48px)/4);}}
+</style></div>
+
+<section class="pt-film">
+  <video autoplay muted loop playsinline preload="metadata" poster="/images/film.jpg" aria-label="PELTA 필름">
+    <source src="/images/film.mp4" type="video/mp4">
+  </video>
+</section>
+<style>
+.pt-film{position:relative;width:100%;aspect-ratio:16/9;max-height:100vh;background:var(--pt-ink);overflow:hidden;}
+.pt-film video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;}
+</style>
+<section class="pt-sec pt-products" id="best"><div class="pt-wrap"><h2 class="pt-h2" style="margin-bottom:32px">Best</h2><ul class="pt-p"><li><a href="#"><div class="pt-p__img"><img class="pt-p__main" src="/images/matcha.jpg" alt="PELTA 그립삭스 matcha" loading="lazy"><img class="pt-p__hover" src="/images/matcha-model.jpg" alt="" loading="lazy"></div><p class="pt-p__name">PELTA Grip Socks <span class="pt-en">matcha</span></p><p class="pt-p__price">25,000원</p></a></li><li><a href="#"><div class="pt-p__img"><img class="pt-p__main" src="/images/lavender.jpg" alt="PELTA 그립삭스 lavender" loading="lazy"><img class="pt-p__hover" src="/images/lavender-model.jpg" alt="" loading="lazy"></div><p class="pt-p__name">PELTA Grip Socks <span class="pt-en">lavender</span></p><p class="pt-p__price">25,000원</p></a></li><li><a href="#"><div class="pt-p__img"><img class="pt-p__main" src="/images/cherry-pie.jpg" alt="PELTA 그립삭스 cherry pie" loading="lazy"><img class="pt-p__hover" src="/images/cherry-pie-model.jpg" alt="" loading="lazy"></div><p class="pt-p__name">PELTA Grip Socks <span class="pt-en">cherry pie</span></p><p class="pt-p__price">25,000원</p></a></li><li><a href="#"><div class="pt-p__img"><img class="pt-p__main" src="/images/peach-yogurt.jpg" alt="PELTA 그립삭스 peach yogurt" loading="lazy"><img class="pt-p__hover" src="/images/peach-yogurt-model.jpg" alt="" loading="lazy"></div><p class="pt-p__name">PELTA Grip Socks <span class="pt-en">peach yogurt</span></p><p class="pt-p__price">25,000원</p></a></li></ul></div></section>
+<section class="pt-sec pt-story">
+  <div class="pt-wrap pt-story__inner">
+    <p class="pt-story__lead">퇴근길에 운동 가방을 챙기고,<br>쉴까 하다 결국 현관 앞에 서는 것.</p>
+    <h2 class="pt-story__title">운동에서 가장 큰 에너지가 필요한 순간은,<br>운동하러 가는 문을 여는 그때입니다.</h2>
+    <p class="pt-story__close">PELTA는 그 문을 여는 순간부터 함께합니다.</p>
+    <a class="pt-link" href="#">브랜드 이야기 보기</a>
+  </div>
+</section>
+<style>
+.pt-story{background:var(--pt-purple);color:var(--pt-cream);}
+.pt-story__inner{max-width:880px;display:flex;flex-direction:column;gap:24px;}
+.pt-story__lead{font-size:17px;line-height:1.8;color:var(--pt-lav);margin:0;}
+.pt-story__title{font-family:var(--pt-kr);font-weight:700;letter-spacing:-.02em;font-size:clamp(26px,3.4vw,44px);line-height:1.45;margin:0;color:#fff;}
+.pt-story__close{font-size:18px;font-weight:500;color:var(--pt-lime);margin:0 0 8px;}
+.pt-story .pt-link{color:var(--pt-cream);}
+</style>
+<section class="pt-sec pt-size">
+  <div class="pt-wrap pt-size__grid">
+    <div class="pt-size__text">
+      <h2 class="pt-h2">원 사이즈 대신,<br>발에 맞는 사이즈</h2>
+      <p class="pt-body">가장 정확하게 발을 잡아줄 수 있도록 사이즈 다양화를 하였습니다.</p>
+    </div>
+    <div class="pt-size__stage" role="img" aria-label="작은 발 225–245mm와 큰 발 245–265mm 두 가지 사이즈">
+      <svg class="pt-size__sock" viewBox="0 0 420 300" aria-hidden="true">
+        <g class="pt-size__shape">
+          <path d="M120 24 H200 V150 C200 175 225 190 260 198 L335 212 C368 218 382 238 378 255 C374 270 360 276 335 276 H140 C112 276 96 258 100 232 C104 205 118 190 120 160 Z" fill="var(--pt-lav)"/>
+          <rect x="120" y="44" width="80" height="12" fill="var(--pt-purple)"/>
+          <rect x="120" y="64" width="80" height="12" fill="var(--pt-purple)"/>
+          <g fill="var(--pt-purple)"><circle cx="150" cy="276" r="5"/><circle cx="176" cy="276" r="5"/><circle cx="202" cy="276" r="5"/><circle cx="228" cy="276" r="5"/><circle cx="254" cy="276" r="5"/><circle cx="280" cy="276" r="5"/><circle cx="306" cy="276" r="5"/><circle cx="332" cy="276" r="5"/></g>
+        </g>
+      </svg>
+      <div class="pt-size__labels" aria-hidden="true">
+        <p class="pt-size__lab pt-size__lab--s"><span>작은 발</span><b class="pt-en">225–245mm</b></p>
+        <p class="pt-size__lab pt-size__lab--l"><span>큰 발</span><b class="pt-en">245–265mm</b></p>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+.pt-size{background:var(--pt-cream);}
+.pt-size__grid{display:grid;grid-template-columns:1fr 1.2fr;gap:clamp(32px,6vw,96px);align-items:center;}
+.pt-size__text{display:flex;flex-direction:column;gap:20px;max-width:440px;}
+.pt-size__stage{position:relative;background:#fff;border-radius:28px;padding:clamp(24px,4vw,48px);display:flex;flex-direction:column;gap:12px;}
+.pt-size__sock{width:100%;height:auto;overflow:visible;}
+.pt-size__shape{transform-box:fill-box;transform-origin:0% 100%;animation:pt-grow 5s ease-in-out infinite;}
+.pt-size__labels{position:relative;height:64px;}
+.pt-size__lab{position:absolute;left:0;top:0;margin:0;display:flex;align-items:baseline;gap:14px;}
+.pt-size__lab span{font-size:15px;font-weight:700;color:var(--pt-purple);}
+.pt-size__lab b{font-weight:400;font-size:clamp(36px,4vw,56px);line-height:1;color:var(--pt-ink);}
+.pt-size__lab--s{animation:pt-lab-s 5s ease-in-out infinite;}
+.pt-size__lab--l{animation:pt-lab-l 5s ease-in-out infinite;}
+@keyframes pt-grow{0%,35%{transform:scale(.8);}50%,85%{transform:scale(1);}100%{transform:scale(.8);}}
+@keyframes pt-lab-s{0%,35%{opacity:1;}45%,90%{opacity:0;}100%{opacity:1;}}
+@keyframes pt-lab-l{0%,40%{opacity:0;}50%,85%{opacity:1;}95%,100%{opacity:0;}}
+@media (prefers-reduced-motion:reduce){.pt-size__shape,.pt-size__lab{animation:none;}.pt-size__lab--l{top:40px;}.pt-size__labels{height:110px;}}
+@media (max-width:900px){.pt-size__grid{grid-template-columns:1fr;}}
+</style>
+<section class="pt-sec pt-products" id="all"><div class="pt-wrap"><h2 class="pt-h2" style="margin-bottom:32px">All products</h2><ul class="pt-p"><li><a href="#"><div class="pt-p__img"><img class="pt-p__main" src="/images/matcha.jpg" alt="PELTA 그립삭스 matcha" loading="lazy"><img class="pt-p__hover" src="/images/matcha-model.jpg" alt="" loading="lazy"></div><p class="pt-p__name">PELTA Grip Socks <span class="pt-en">matcha</span></p><p class="pt-p__price">25,000원</p></a></li><li><a href="#"><div class="pt-p__img"><img class="pt-p__main" src="/images/lavender.jpg" alt="PELTA 그립삭스 lavender" loading="lazy"><img class="pt-p__hover" src="/images/lavender-model.jpg" alt="" loading="lazy"></div><p class="pt-p__name">PELTA Grip Socks <span class="pt-en">lavender</span></p><p class="pt-p__price">25,000원</p></a></li><li><a href="#"><div class="pt-p__img"><img class="pt-p__main" src="/images/cherry-pie.jpg" alt="PELTA 그립삭스 cherry pie" loading="lazy"><img class="pt-p__hover" src="/images/cherry-pie-model.jpg" alt="" loading="lazy"></div><p class="pt-p__name">PELTA Grip Socks <span class="pt-en">cherry pie</span></p><p class="pt-p__price">25,000원</p></a></li><li><a href="#"><div class="pt-p__img"><img class="pt-p__main" src="/images/peach-yogurt.jpg" alt="PELTA 그립삭스 peach yogurt" loading="lazy"><img class="pt-p__hover" src="/images/peach-yogurt-model.jpg" alt="" loading="lazy"></div><p class="pt-p__name">PELTA Grip Socks <span class="pt-en">peach yogurt</span></p><p class="pt-p__price">25,000원</p></a></li><li><a href="#"><div class="pt-p__img"><img class="pt-p__main" src="/images/lemon-squishy.jpg" alt="PELTA 그립삭스 lemon squishy" loading="lazy"><img class="pt-p__hover" src="/images/lemon-squishy-model.jpg" alt="" loading="lazy"></div><p class="pt-p__name">PELTA Grip Socks <span class="pt-en">lemon squishy</span></p><p class="pt-p__price">25,000원</p></a></li><li><a href="#"><div class="pt-p__img"><img class="pt-p__main" src="/images/lilac.jpg" alt="PELTA 그립삭스 lilac" loading="lazy"><img class="pt-p__hover" src="/images/lilac-model.jpg" alt="" loading="lazy"></div><p class="pt-p__name">PELTA Grip Socks <span class="pt-en">lilac</span></p><p class="pt-p__price">25,000원</p></a></li><li><a href="#"><div class="pt-p__img"><img class="pt-p__main" src="/images/pistachio.jpg" alt="PELTA 그립삭스 pistachio" loading="lazy"><img class="pt-p__hover" src="/images/pistachio-model.jpg" alt="" loading="lazy"></div><p class="pt-p__name">PELTA Grip Socks <span class="pt-en">pistachio</span></p><p class="pt-p__price">25,000원</p></a></li></ul></div></section>
+
+<section class="pt-sec pt-ugc">
+  <div class="pt-wrap">
+    <div class="pt-ugc__head">
+      <h2 class="pt-h2">바닥에선 나만 보고,<br>발을 들면 모두가 봅니다</h2>
+      <a class="pt-btn" href="https://www.instagram.com/" target="_blank" rel="noopener">@인스타그램 계정</a>
+    </div>
+    <div class="pt-ugc__feed" id="pt-ig-feed"></div>
+    <ul class="pt-ugc__grid">
+      <li><img src="/images/ugc-1.jpg" alt="PELTA 인스타그램 게시물"></li>
+      <li><img src="/images/ugc-2.jpg" alt="PELTA 인스타그램 게시물"></li>
+      <li><img src="/images/ugc-3.jpg" alt="PELTA 인스타그램 게시물"></li>
+      <li><img src="/images/ugc-4.jpg" alt="PELTA 인스타그램 게시물"></li>
+      <li><img src="/images/ugc-5.jpg" alt="PELTA 인스타그램 게시물"></li>
+      <li><img src="/images/ugc-6.jpg" alt="PELTA 인스타그램 게시물"></li>
+    </ul>
+  </div>
+</section>
+<style>
+.pt-ugc{background:#fff;}
+.pt-ugc__head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:40px;}
+.pt-ugc__feed:empty{display:none;}
+.pt-ugc__grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(6,1fr);gap:8px;}
+.pt-ugc__grid li{aspect-ratio:1;background:var(--pt-mist);overflow:hidden;}
+.pt-ugc__grid img{width:100%;height:100%;object-fit:cover;display:block;}
+@media (max-width:900px){.pt-ugc__feed:empty{display:none;}
+.pt-ugc__grid{grid-template-columns:repeat(3,1fr);}}
+</style>
+</main>
+
+<footer class="pt-foot">
+  <div class="pt-foot__in">
+    <p class="pt-foot__tag pt-en">A little support in every move.</p>
+    <div class="pt-foot__cols">
+      <ul><li><a href="#">고객센터</a></li><li><a href="#">배송 및 반품</a></li><li><a href="#">사이즈 가이드</a></li></ul>
+      <ul><li><a href="#">브랜드 이야기</a></li><li><a href="https://www.instagram.com/" target="_blank" rel="noopener">인스타그램</a></li><li><a href="#">회원 가입</a></li></ul>
+      <ul><li><a href="#">이용약관</a></li><li><a href="#"><strong>개인정보처리방침</strong></a></li></ul>
+    </div>
+    <div class="pt-foot__biz">
+      <p>하트플래닛컴퍼니 주식회사 · 대표 이요안나 · 사업자등록번호 674-86-02439</p>
+      <p>서울특별시 광진구 능동로 120 · 0507-1454-1580 · contact@heartplanetcompany.com</p>
+      <p>© PELTA</p>
+    </div>
+  </div>
+</footer>
+<style>
+.pt-foot{background:var(--pt-ink);color:var(--pt-cream);font-family:var(--pt-kr);padding:72px var(--pt-pad) 48px;}
+.pt-foot__in{max-width:1440px;margin:0 auto;display:grid;grid-template-columns:1.2fr 1fr;gap:48px;}
+.pt-foot__tag{font-size:clamp(32px,4vw,52px);line-height:1.05;margin:0;color:var(--pt-lav);}
+.pt-foot__cols{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+.pt-foot ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px;}
+.pt-foot a{color:var(--pt-cream);text-decoration:none;font-size:14px;}
+.pt-foot a:hover{color:var(--pt-lime);}
+.pt-foot__biz{grid-column:1/-1;border-top:1px solid #3A3145;padding-top:28px;font-size:12px;line-height:1.9;color:#A79DB5;}
+.pt-foot__biz p{margin:0;}
+@media (max-width:900px){.pt-foot__in{grid-template-columns:1fr;}}
+</style>
+
+<div class="pt-pop" id="pt-pop" role="dialog" aria-modal="true" aria-labelledby="pt-pop-title" hidden>
+  <div class="pt-pop__card">
+    <button class="pt-pop__close" type="button" aria-label="닫기">×</button>
+    <p class="pt-pop__kicker pt-en">Join the club</p>
+    <h2 class="pt-pop__title" id="pt-pop-title">첫 구매 혜택,<br>메일로 먼저 받아보세요</h2>
+    <form class="pt-pop__form" method="post">
+      <label class="pt-pop__sr" for="pt-pop-email">이메일</label>
+      <input id="pt-pop-email" type="email" name="email" placeholder="이메일 주소" required autocomplete="email">
+      <label class="pt-pop__agree"><input type="checkbox" required> (필수) 이메일 수집 및 광고성 정보 수신에 동의합니다</label>
+      <button class="pt-btn" type="submit">가입하기</button>
+    </form>
+    <a class="pt-pop__join" href="#">회원가입하고 바로 혜택 받기</a>
+  </div>
+</div>
+<style>
+.pt-pop{position:fixed;inset:0;z-index:300;display:flex;align-items:flex-end;justify-content:center;padding:16px;background:rgba(29,20,40,.35);font-family:var(--pt-kr);}
+.pt-pop[hidden]{display:none;}
+.pt-pop__card{position:relative;width:min(440px,100%);background:#fff;color:var(--pt-ink);border-radius:24px;padding:40px 32px 32px;display:flex;flex-direction:column;gap:14px;animation:pt-pop-in .35s ease;}
+@keyframes pt-pop-in{from{transform:translateY(24px);opacity:0;}to{transform:none;opacity:1;}}
+.pt-pop__close{position:absolute;top:12px;right:14px;width:40px;height:40px;border:0;background:none;font-size:26px;cursor:pointer;color:var(--pt-mute);}
+.pt-pop__kicker{margin:0;font-size:22px;color:var(--pt-purple);}
+.pt-pop__title{margin:0 0 6px;font-size:24px;font-weight:700;line-height:1.35;letter-spacing:-.02em;}
+.pt-pop__form{display:flex;flex-direction:column;gap:12px;}
+.pt-pop__form input[type=email]{height:50px;border:1px solid #D9D2E3;border-radius:12px;padding:0 16px;font:16px var(--pt-kr);}
+.pt-pop__form input[type=email]:focus{outline:2px solid var(--pt-purple);outline-offset:1px;border-color:transparent;}
+.pt-pop__agree{display:flex;gap:8px;align-items:flex-start;font-size:13px;line-height:1.5;color:var(--pt-mute);}
+.pt-pop__form .pt-btn{border:0;cursor:pointer;height:50px;}
+.pt-pop__join{font-size:13px;color:var(--pt-mute);text-align:center;}
+.pt-pop__sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);}
+@media (min-width:700px){.pt-pop{align-items:center;}}
+@media (prefers-reduced-motion:reduce){.pt-pop__card{animation:none;}}
+</style>
+<script>
+(function(){
+  var pop=document.getElementById('pt-pop'); if(!pop) return;
+  var shown=false; try{shown=sessionStorage.getItem('pt-pop')==='1';}catch(e){}
+  function open(){ if(shown) return; shown=true; try{sessionStorage.setItem('pt-pop','1');}catch(e){}
+    pop.hidden=false; var i=pop.querySelector('input[type=email]'); if(i) i.focus(); window.removeEventListener('scroll',check); }
+  function close(){ pop.hidden=true; }
+  function check(){ var d=document.documentElement; if((window.scrollY+window.innerHeight)/d.scrollHeight>0.7) open(); }
+  window.addEventListener('scroll',check,{passive:true});
+  pop.querySelector('.pt-pop__close').addEventListener('click',close);
+  var f=pop.querySelector('form'); f.addEventListener('submit',function(e){ if(!f.getAttribute('action')){ e.preventDefault(); f.outerHTML='<p class="pt-pop__done">감사합니다. 첫 구매 혜택 소식을 메일로 보내드릴게요.</p>'; } });
+  pop.addEventListener('click',function(e){ if(e.target===pop) close(); });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape'&&!pop.hidden) close(); });
+})();
+</script>
+<style>
+.pt-products{background:#fff;}
+.pt-p{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
+.pt-p a{color:inherit;text-decoration:none;display:block;}
+.pt-p__img{position:relative;aspect-ratio:3/4;background:var(--pt-mist);overflow:hidden;}
+.pt-p__img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity .4s ease,transform .6s ease;}
+.pt-p__hover{opacity:0;}
+@media (hover:hover){.pt-p a:hover .pt-p__hover{opacity:1;}.pt-p a:hover .pt-p__main{transform:scale(1.03);}}
+.pt-p__name{font-size:14px;margin:12px 0 4px;}
+.pt-p__name .pt-en{font-size:16px;}
+.pt-p__price{font-size:14px;font-weight:700;margin:0;}
+.pt-p a:focus-visible{outline:2px solid var(--pt-purple);outline-offset:4px;}
+@media (max-width:900px){.pt-p{grid-template-columns:repeat(2,1fr);}}
+</style>
+</body>
+</html>
